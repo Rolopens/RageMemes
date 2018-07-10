@@ -1,0 +1,59 @@
+.home-navbar{
+    background-color:#3E3E3B;
+    color: #4C586F;
+}
+
+body{
+    background-color: #4C586F;
+}
+
+.whitewash-text{
+    color:#EBECED ;
+}
+
+.whitewash-text:hover{
+    color:#CBC5C1;
+}
+
+#main-content{
+  width:600px;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+}
+
+.main-container{
+    background-color:#CBC5C1;
+    padding:50px;
+    margin-top: 75px;
+}
+
+.right-floater{
+    float: right;
+}
+
+/*.post-title{
+    color: #3E3E3B;
+    font-size: 30px;
+}*/
+
+.meme-post .image {
+    transition: transform .2s;
+    margin-bottom:25px;
+}
+
+
+.meme-post .image:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.details{
+    margin-top:10px;
+}
+
+.details h2{
+    font-size:15px;
+    color:#655e5e;
+}
