@@ -1,31 +1,32 @@
-html,
-body {
-  height: 100%;
-    width:100%;
-}
-
-body {
-    display: -ms-flexbox;
+body{
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #CBC5C1 ;
-/*  background-image: url(../res/background.png);*/
+    align-content: center;
+    align-items: center;
+    
 }
 
-.big-container1{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #A2AAB0 ;
-    width: 100%;
+.container{
+    margin: 0px;
+    background-color: #EBECED;
+    border-right-color: #CBC5C1;
+    border-right-style: solid;
     
+}
+
+.input-width{
+    width: 250px;
+}
+
+.form-format{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
 }
 
 .form-signin {
@@ -58,7 +59,15 @@ body {
   border-top-right-radius: 0;
 }
 
-.sign-up{
-    padding-top: 10px;
+.whitewash-text{
+    color:#EBECED ;
 }
 
+.whitewash-text:hover{
+    color:#CBC5C1;
+}
+
+.home-navbar{
+    background-color:#3E3E3B;
+    color: #4C586F;
+}
