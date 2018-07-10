@@ -2,30 +2,86 @@
 <html lang="en">
   <head>
 
-    <title>Login</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+      
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      
     <!-- Custom styles for this template -->
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    
+
   </head>
 
-  <body class="text-center">
-      <form class="form-signin">
-        <img class="mb-4" src="res/homeIcon.png" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Log In</h1>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-        <div class="sign-up">
-            <a href="" class="btn-default">Sign up</a>
+  <body>
+      <!--navbar-->
+      <nav class="fixed-top navbar navbar-expand-lg  home-navbar">
+          <a class="navbar-brand whitewash-text" href="index.html">
+            <img src="res/homeIcon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            RageMemes
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link whitewash-text" href="login.html">Login<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle whitewash-text" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Search by Tags
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">#Anime</a>
+                  <a class="dropdown-item" href="#">#Comic</a>
+                  <a class="dropdown-item" href="#">#Dank</a>
+                  <a class="dropdown-item" href="#">#School</a>
+                  <a class="dropdown-item" href="#">#Wholesome</a>
+                  
+                </div>
+              </li>
+            </ul>
           </div>
-        <p class="mt-5 mb-3 text-muted">&copy; Meme Sharing Website by Michiko Go, Miggy Llamas, Rolo Pena 2018</p>
-      </form>
+        </nav>
+      
+      <!--Main Content-->
+      <div id="main-content">
+          <div class = "container main-container">
+		  <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Hello, Visitor!</h1>
+		  
+  		  <p style="text-align: left; color:#3E3E3B;" class = "lead">Have some public memes</p>
+		  <hr class = "my-4">
+          <div class="meme-post">
+              <h1 class="post-title">Some Harry Potter Meme</h1>
+              <img src="res/hpMeme.jpg" class="img-thumbnail">
+          </div>
+          <hr class = "my-4">
+          <div class="meme-post">
+              <h1 class="post-title">Dank Meme</h1>
+              <img src="res/dankmeme1.jpg" class="img-thumbnail">
+          </div>
+          <hr class = "my-4">
+          <div class="meme-post">
+              <h1 class="post-title">Because I'm the size of a whole family</h1>
+              <img src="res/doritos.jpg" class="img-thumbnail">
+          </div>
+          <hr class = "my-4">
+          <div class="meme-post">
+              <h1 class="post-title">I wish i had his dance skills</h1>
+              <img src="res/tenor.gif" class="img-thumbnail">
+          </div>
+          <hr class = "my-4">
+          <div class="meme-post">
+              <h1 class="post-title">some men leave with great treasures, and others do not make it out alive</h1>
+              <img src="res/mapMeme.jpg" class="img-thumbnail">
+          </div>
+		</div>
+      </div>
   </body>
 </html>
