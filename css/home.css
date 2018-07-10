@@ -16,14 +16,12 @@ body{
 }
 
 #main-content{
-  
   width:600px;
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1.2rem;
-    
 }
 
 .main-container{
@@ -35,4 +33,12 @@ body{
 .post-title{
     color: #3E3E3B;
     font-size: 30px;
+}
+
+.navbar{
+    display: inherit;
+}
+
+.right-floater{
+    float: right;
 }
