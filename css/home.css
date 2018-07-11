@@ -7,14 +7,26 @@ body{
     background-image: url(../res/wallpaper.png);
     background-attachment: fixed;
     background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+
 }
 
 .whitewash-text{
-    color:#EBECED ;
+    color:#EBECED;
 }
 
 .whitewash-text:hover{
     color:#CBC5C1; 
+}
+
+.meme-post{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #main-content{
@@ -45,9 +57,33 @@ body{
 }
 
 .navbar{
-    display: inherit;
+    display: block;
 }
 
 .right-floater{
     float: right;
+}
+
+#main-content1{
+    margin-left: 30px;
+  width:300px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+    position:fixed;
+    
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.flex-element{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
