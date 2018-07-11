@@ -13,19 +13,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
       
     <!-- Custom styles for this template -->
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/viewMeme.css" rel="stylesheet">
     
+    <script>
+        document.getElementById("date").innerHTML = Date();
+    </script>
 
   </head>
 
   <body>
       <!--navbar-->
       <nav class="fixed-top navbar navbar-expand-lg home-navbar reverse-order">
-          <a class="navbar-brand whitewash-text" href="loggedInHome.html">
+          <a class="navbar-brand whitewash-text" href="index.html">
             <img src="res/homeIcon.png" width="30" height="30" class="d-inline-block align-top" alt="">
             RageMemes
           </a>
-          <a class="nav-link whitewash-text right-floater" href="index.html">Logout<span class="sr-only">(current)</span></a>
+          <a class="nav-link whitewash-text right-floater" href="login.html">Login<span class="sr-only">(current)</span></a>
           <div class="collapse navbar-collapse right-floater" id="navbarNavDropdown">
             <ul class="navbar-nav">
               
@@ -47,43 +50,18 @@
         </nav>
       
       <!--Main Content-->
-      <div id="main-content1">
-          <div class="meme-container">
-              <img src="res/TwiceTzuyu.jpg" class="avatar">
-              <h4 class="display-6 flex-element" style="text-align: center; color:#3E3E3B;">Chou Tzu-yu!</h4>
-              <!--Mina Myoui-->
-              <p href="#" style="text-align: center; color:#3E3E3B;" class = "lead">LA LA LA! Let's just dance the night away!!</p>
-          </div>
-          
-      </div>
-      
-      
-      
       <div id="main-content">
-          <div class="meme-container">
-              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Recent Memes</h1>
-          </div>
-          <div class="meme-container">
-              <div class="meme-post">
-                  <h1 class="post-title">I wish i had his dance skills</h1>
-                  <img src="res/tenor.gif" class="img-thumbnail">
+          <div class="container meme-container">
+          <div class="meme-post">
+              <img src="res/meme1.jpg" class="image">
+              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Harry, you dog...</h1>
+              <div class="details">
+                  <h2 class="description">Damn, Daniel Radcliffe, back at it again with the fresh memes! How do you do it? Where's my boy Ron at?</h2>
+                  <h3 class="author">Posted by Rolopens on 11 July 2018</h3>
+                  <h3 class="tags">Tags: <a href="classicTagged.html">Classic</a></h3>
               </div>
           </div>
-          <div class="meme-container">
-              <div class="meme-post">
-                  <h1 class="post-title">some men leave with great treasures, and others do not make it out alive</h1>
-                  <img src="res/mapMeme.jpg" class="img-thumbnail">
-              </div>
-          </div>
-          
-          <div class="meme-container">
-              <div class="meme-post">
-                  <h1 class="post-title">what a twist</h1>
-                  <img src="res/popcorn.jpg" class="img-thumbnail">
-              </div>
-          </div>
+		</div>
       </div>
-      
-      
   </body>
 </html>
