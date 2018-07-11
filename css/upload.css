@@ -1,0 +1,38 @@
+.home-navbar{
+    background-color:#3E3E3B;
+    color: #4C586F;
+}
+
+body{
+    background-color: #4C586F;
+}
+
+.whitewash-text{
+    color:#EBECED ;
+}
+
+.whitewash-text:hover{
+    color:#CBC5C1;
+}
+
+#main-content{
+  
+  width:600px;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+    
+}
+
+.main-container{
+    background-color:#CBC5C1;
+    padding:50px;
+    margin-top: 75px;
+}
+
+.upload-step{
+    color: #3E3E3B;
+    margin:30px 5px;
+}
