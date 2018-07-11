@@ -4,7 +4,9 @@
 }
 
 body{
-    background-color: #4C586F;
+    background-image: url(../res/wallpaper.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .whitewash-text{
@@ -12,11 +14,11 @@ body{
 }
 
 .whitewash-text:hover{
-    color:#CBC5C1;
+    color:#CBC5C1; 
 }
 
 #main-content{
-  width:600px;
+  width:800px;
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
@@ -24,10 +26,17 @@ body{
   font-size: 1.2rem;
 }
 
-.main-container{
-    background-color:#CBC5C1;
+.meme-container{
+    background-color:#EBECED;
     padding:50px;
     margin-top: 75px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .post-title{
