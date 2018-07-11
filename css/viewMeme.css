@@ -65,13 +65,12 @@ body{
 
 #main-content1{
     margin-left: 30px;
-  width:300px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
-    position:fixed;
-    
+    width:300px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    position:fixed;   
 }
 
 .avatar{
@@ -99,16 +98,19 @@ body{
     transition: transform .2s;
     margin-bottom:25px;
     box-shadow: 10px 10px;
+    max-width: 700px;
 }
-
 
 .meme-post .image:hover {
     transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .meme-post h1{
-     text-shadow: 2px 2px #cecece;
-    align-content: center;
+    text-shadow: 2px 2px #cecece;
+}
+
+.meme-post .title{
+    text-align:center;
 }
 
 .details{
