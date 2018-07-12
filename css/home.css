@@ -91,3 +91,8 @@ body{
 .email{
     color: #4C586F;
 }
+
+.editable-input{
+    border-style: dashed;
+    border-color:#4C586F;
+}

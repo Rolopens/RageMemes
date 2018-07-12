@@ -53,33 +53,47 @@
           <div class="meme-container">
               <img src="../res/TwiceMina.jpg" class="avatar">
               <!--Mina Myoui-->
-              <a href="../upload.html" style="text-align: center; color:#3E3E3B;" class = "lead">Upload a meme</a>
-              <a href="MinasMemes.html" style="text-align: center; color:#3E3E3B;" class = "lead">My memes</a>
           </div>
           
       </div>
       <div id="main-content">
-          <div class="meme-container">
-              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">RageMemes</h1>
+          <div class="container meme-container">
+            <div class=" container">
+              <form action="viewMeme4-1Edit.html">
+                <button type="submit" class="btn btn-primary">Finish Editing</button>
+              </form>
+          </div>
+          
+          <div class="meme-post">
+              <img src="../res/meme4.gif" class="image">
+              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Edit Title:</h1>
+              <div contenteditable="true" class="editable-input" style="border-style: solid;">I wish I had his dance skills...</div>
+              <div class="details">
+                  <h2 class="description" style="margin:0;">Edit description:</h2>
+                  <div contenteditable="true" class="editable-input" style="border-style: solid;">A legend of the dancefloor.</div>
+                <fieldset>
+                    <legend>Edit Tags</legend>
 
-              <p style="text-align: left; color:#3E3E3B;" class = "lead">My Memes</p>
-          </div>
-          <!--4-->
-          <div class="meme-container">
-              <div class="meme-post">
-                  <h1 class="post-title"><a href="viewMeme4-1.html">I wish I had his dance skills...</a></h1>
-                  <img src="../res/meme4.gif" class="img-thumbnail">
-                  
+                        <input type="checkbox" id="scales" name="tag"
+                               value="Anime" />
+                        <label for="Anime">Anime</label>
+                        <input type="checkbox" id="Classic" name="tag"
+                               value="Classic" />
+                        <label for="Classic">Classic</label>
+                        <input type="checkbox" id="Dank" name="tag"
+                               value="Dank" />
+                        <label for="Dank">Dank</label>
+                        <input type="checkbox" id="claws" name="tag"
+                               value="Pinoy" />
+                        <label for="Pinoy">Pinoy</label>
+                        <input type="checkbox" id="claws" name="tag"
+                               value="Wholesome" checked />
+                        <label for="Wholesome">Wholesome</label>
+
+                </fieldset>
               </div>
           </div>
-          <!--5-->
-          <div class="meme-container">
-              <div class="meme-post">
-                  <h1 class="post-title"><a href="viewMeme5-1.html">Some men leave with great treasures, and others do not make it out alive.</a></h1>
-                  <img src="../res/meme5.jpg" class="img-thumbnail">
-                  
-              </div>
-          </div>
+		</div>
       </div>
   </body>
 </html>

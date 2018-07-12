@@ -14,7 +14,10 @@
       
     <!-- Custom styles for this template -->
     <link href="css/upload.css" rel="stylesheet">
-
+      
+      
+      
+      
 
     <script>
        function previewFile(){
@@ -41,65 +44,66 @@
 
   <body>
       <!--navbar-->
-      <nav class="fixed-top navbar navbar-expand-lg home-navbar reverse-order">
-          <a class="navbar-brand whitewash-text" href="loggedInHome.html">
-            <img src="res/homeIcon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            RageMemes
+      <nav class="fixed-top navbar navbar-expand-lg  home-navbar">
+          <a class="navbar-brand whitewash-text" href="index.html">
           </a>
-          <a class="nav-link whitewash-text right-floater" href="index.html">Logout<span class="sr-only">(current)</span></a>
-          <div class="collapse navbar-collapse right-floater" id="navbarNavDropdown">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              
+              <li class="nav-item active">
+                <a class="nav-link whitewash-text" href="login.html">Login<span class="sr-only">(current)</span></a>
+              </li>
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle whitewash-text" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Search by Tags
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="animeTaggedLog.html">#Anime</a>
-                  <a class="dropdown-item" href="classicTaggedLog.html">#Classic</a>
-                  <a class="dropdown-item" href="dankTaggedLog.html">#Dank</a>
-                  <a class="dropdown-item" href="pinoyTaggedLog.html">#Pinoy</a>
-                  <a class="dropdown-item" href="wholesomeTaggedLog.html">#Wholesome</a>
+                  <a class="dropdown-item" href="#">#Anime</a>
+                  <a class="dropdown-item" href="#">#Classic</a>
+                  <a class="dropdown-item" href="#">#Dank</a>
+                  <a class="dropdown-item" href="#">#School</a>
+                  <a class="dropdown-item" href="#">#Wholesome</a>
                   
                 </div>
               </li>
             </ul>
           </div>
         </nav>
+      
       <!--Main Content-->
       <div id="main-content">
           <div class="container main-container">
-              <form class="input-types" action="loggedInHome.html">
-                  <h1 class="display-4" style="text-align: center; color:#3E3E3B;">Got a <i>dank</i> meme?</h1>
-                  <h4 style="text-align: center; color:#3E3E3B;" class = "lead">Upload it here.</h4>
-                  <!--UploadFiles-->
-                  <p>Show to the world!</p>
-                  <input type="file" onchange="previewFile()">
-                  <br>
-                  <!--<img src="" height="200" alt="Image preview...">-->
-                  <hr class="my-4">
-                  <!--Add Tags-->
-                  <p>Tag to share to the word!</p>
-                  <input class="checkbox-size" name="tag" value="#Anime" style="vertical-align: middle; margin: 0px;" type="checkbox">#Anime<br>
-                  <input class="checkbox-size" name="tag" value="#Classic" style="vertical-align: middle; margin: 0px;" type="checkbox">#Classic<br>
-                  <input class="checkbox-size" name="tag" value="#Dank" style="vertical-align: middle; margin: 0px;" type="checkbox">#Dank<br>
-                  <input class="checkbox-size" name="tag" value="#Pinoy" style="vertical-align: middle; margin: 0px;" type="checkbox">#Pinoy<br>
-                  <input class="checkbox-size" ame="tag" value="#Wholesome" style="vertical-align: middle; margin: 0px;" type="checkbox">#Wholesome<br>
-                  <hr class="my-4">
-                  <!--Allow Sharing to specific users-->
-                  <p>Send love, Share to friends?</p>
-                  <input type="text" class="form-control input-width" placeholder="Enter Friends Name">
-                  <hr class="my-4">
-                  <!--Allow to set to private or public-->
-                  <p>Show the world?</p>
-                  <input class="radio-size" name="Private" style="vertical-align: middle; margin: 0px;" type="radio">Private<br>
-                  <input class="radio-size" name="Public" style="vertical-align: middle; margin: 0px;" type="radio">Public<br>
-                  <hr class="my-4">
-                  <!--Submit-->
-                  <button class="btn btn-lg btn-success btn-block" type="submit">Up and Out!</button>
+		  <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Got a <i>dank</i> meme?</h1>
+  		  <p style="text-align: left; color:#3E3E3B;" class = "lead">Upload it here.</p>
+              
+              
+              
+              <input type="file" onchange="previewFile()"><br>
+<img src="" height="200" alt="Image preview...">
+              
+              
+		  <hr class="my-4">
+          <div class="upload-step">
+            <h2 class="title">Choose a file:</h2>
+              <form action="/action_page.php">
+                   <input type="file" name="pic" accept="image/*"><br>
+                   <input type="submit">
               </form>
-             
-<!--              <button class="btn btn-lg btn-primary btn-block input-width" type="submit">Submit</button>-->
+          </div>
+          <div class="upload-step">
+            <h2 class="title">Choose a file:</h2>
+              <form action="/action_page.php">
+                   <input type="file" name="pic" accept="image/*"><br>
+                   <input type="submit">
+              </form>
+          </div>
+              
+              
+              
+              
+              
 		</div>
       </div>
   </body>
