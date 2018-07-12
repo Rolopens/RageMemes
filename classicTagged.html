@@ -5,7 +5,7 @@
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
       
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,22 +13,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
       
     <!-- Custom styles for this template -->
-    <link href="../css/viewMeme.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
     
-    <script>
-        document.getElementById("date").innerHTML = Date();
-    </script>
 
   </head>
 
   <body>
       <!--navbar-->
       <nav class="fixed-top navbar navbar-expand-lg home-navbar reverse-order">
-          <a class="navbar-brand whitewash-text" href="../index.html">
+          <a class="navbar-brand whitewash-text" href="index.html">
             <img src="res/homeIcon.png" width="30" height="30" class="d-inline-block align-top" alt="">
             RageMemes
           </a>
-          <a class="nav-link whitewash-text right-floater" href="../login.html">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link whitewash-text right-floater" href="login.html">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link whitewash-text right-floater" href="signup.html">Sign Up<span class="sr-only">(current)</span></a>
           <div class="collapse navbar-collapse right-floater" id="navbarNavDropdown">
             <ul class="navbar-nav">
               
@@ -40,8 +38,9 @@
                   <a class="dropdown-item" href="../animeTagged.html">#Anime</a>
                   <a class="dropdown-item" href="../classicTagged.html">#Classic</a>
                   <a class="dropdown-item" href="../dankTagged.html">#Dank</a>
-                  <a class="dropdown-item" href="../schoolTagged.html">#School</a>
+                  <a class="dropdown-item" href="../pinoyTagged.html">#Pinoy</a>
                   <a class="dropdown-item" href="../wholesomeTagged.html">#Wholesome</a>
+                  
                 </div>
               </li>
             </ul>
@@ -50,17 +49,18 @@
       
       <!--Main Content-->
       <div id="main-content">
-          <div class="container meme-container">
-          <div class="meme-post">
-              <img src="../res/meme3.jpg" class="image">
-              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Because I'm the size of a whole family...</h1>
-              <div class="details">
-                  <h2 class="description">They can have the family-sized Piatos instead!</h2>
-                  <h3 class="author">Posted by Rolopens on 11 July 2018</h3>
-                  <h3 class="tags">Tags: <a href="../animeTagged.html">Anime</a>, <a href="../wholesomeTagged.html">Wholesome</a></h3>
+          <div class="meme-container">
+              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">RageMemes</h1>
+
+              <p style="text-align: left; color:#3E3E3B;" class = "lead">Viewing posts tagged "Classic".</p>
+          </div>
+          <!--1-->
+          <div class="meme-container">
+              <div class="meme-post">
+                  <img src="res/meme1.jpg" class="img-thumbnail">
+                  <h1 class="post-title"><a href="viewMeme/viewMeme1.html">Harry, you dog...</a></h1>
               </div>
           </div>
-		</div>
       </div>
   </body>
 </html>
