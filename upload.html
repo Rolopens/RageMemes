@@ -18,22 +18,25 @@
 
     <script>
        function previewFile(){
-           var preview = document.querySelector('img'); //selects the query named img
-           var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+           var preview = document.querySelector('img[id=preview]'); 
+           var file    = document.querySelector('input[type=file]').files[0]; 
            var reader  = new FileReader();
 
            reader.onloadend = function () {
                preview.src = reader.result;
+               preview.width = 250;
+               preview.height = 250;
+               preview.style.display = "block";
            }
 
            if (file) {
-               reader.readAsDataURL(file); //reads the data as a URL
+               reader.readAsDataURL(file); 
            } else {
                preview.src = "";
            }
       }
 
-      previewFile();  //calls the function named previewFile()
+      previewFile();  
       </script>
     
 
@@ -75,6 +78,8 @@
                   <!--UploadFiles-->
                   <p>Show to the world!</p>
                   <input type="file" onchange="previewFile()">
+                  <br><br>
+                  <img src="" id="preview" class="img-thumbnail" style="display: none;">
                   <br>
                   <!--<img src="" height="200" alt="Image preview...">-->
                   <hr class="my-4">
@@ -92,12 +97,36 @@
                   <hr class="my-4">
                   <!--Allow to set to private or public-->
                   <p>Show the world?</p>
-                  <input class="radio-size" name="Private" style="vertical-align: middle; margin: 0px;" type="radio">Private<br>
-                  <input class="radio-size" name="Public" style="vertical-align: middle; margin: 0px;" type="radio">Public<br>
+                  <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 0px;" type="radio">Private<br>
+                  <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 0px;" type="radio">Public<br>
                   <hr class="my-4">
                   <!--Submit-->
-                  <button class="btn btn-lg btn-success btn-block" type="submit">Up and Out!</button>
+                  <button class="btn btn-lg btn-success btn-block" type="button" data-toggle="modal" data-target="#exampleModal">Up and Out!</button>
               </form>
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Do you want to upload your awesome meme?
+                      </div>
+                      <div class="modal-footer">
+                        <form action="loggedInHome.html">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Not Yet</button>
+                        <button type="submit" class="btn btn-primary">YES!</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
              
 <!--              <button class="btn btn-lg btn-primary btn-block input-width" type="submit">Submit</button>-->
 		</div>
