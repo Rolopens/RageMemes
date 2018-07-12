@@ -59,10 +59,15 @@
       <div id="main-content">
           <div class="container meme-container">
             <div class=" container">
-              <form action="viewMeme4-1Edit.html">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Finish editing</button>
-              </form>
-                
+              <div style="display: flex; flex-direction: row;">
+                  <form action="viewMeme4-1Edit.html">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin: 10px;">Finish editing</button>
+                  </form>
+                  <form action="viewMeme4-1Share.html">
+                    <button type="button" style="margin: 10px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal1">Delete</button>
+                  </form>
+                </div>
+                <!--Finish Editing modal-->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -76,7 +81,32 @@
                         Your changes have been saved.
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <form action="../viewMeme/MinasMemes.html">
+                                <button type="submit" class="btn btn-secondary">Close</button>
+                        </form>
+                        <!-- <button type="button" class="btn btn-primary">Home</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Delete Post Modal-->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">You sure?!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Delete Post?
+                      </div>
+                      <div class="modal-footer">
+                        <form action="../viewMeme/MinasMemes.html">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">NO!</button>
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
                         <!-- <button type="button" class="btn btn-primary">Home</button> -->
                       </div>
                     </div>
@@ -87,7 +117,7 @@
           
           <div class="meme-post">
               <img src="../res/meme4.gif" class="image">
-              <h2 class="title" style="text-align: left; color:#3E3E3B;">Edit title:</h1>
+              <h2 class="title" style="text-align: left; color:#3E3E3B;">Edit title:</h2>
               <div contenteditable="true" class="editable-input" style="border-style: solid;">I wish I had his dance skills...</div><br>
                   <h2 class="title" style="margin:0;">Edit description:</h2>
                   <div contenteditable="true" class="editable-input" style="border-style: solid;">A legend of the dancefloor.</div><br>
@@ -111,6 +141,11 @@
                         <label for="Wholesome">Wholesome</label>
 
                 </fieldset>
+              <div>
+                <h2 class="title" style="text-align: left; color:#3E3E3B;">Publicity Setting:</h2>
+                  <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 0px;" type="radio">Private<br>
+                  <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 0px;" type="radio" checked>Public<br>
+              </div>
           </div>
 		</div>
       </div>
