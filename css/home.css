@@ -96,3 +96,19 @@ body{
     border-style: dashed;
     border-color:#4C586F;
 }
+
+.searchbar{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    height: 35px;
+    background-color: #3E3E3B;
+    border-bottom-style: solid;
+    border-bottom-color: #EBECED;
+    color:#EBECED;
+    width: 300px;
+}
+
+.searchbar:focus{
+    outline: none;
+}
