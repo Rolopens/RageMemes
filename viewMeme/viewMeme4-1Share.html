@@ -87,11 +87,24 @@
                 
           </div>
           
-          <div class="meme-post">
+          <div class="meme-post" id="users">
               <img src="../res/meme4.gif" class="image">
               <h2 class="title" id="name" style="text-align: left; color:#3E3E3B;">Enter a user to share this meme with:</h2>
-              <div contenteditable="true" class="editable-input" style="border-style: solid;"></div><br>
+              <input type="text" class="form-control input-width" placeholder="Enter friend's name">
+              <!-- <div contenteditable="true" class="editable-input" style="border-style: solid;"></div><br> -->
           </div>
+          <button type="button" onclick="addMore()">Add another user?</button>                  
+          <script>
+              function addMore() {                          
+                  var btn = document.createElement("input");
+                  var t = document.createTextNode("Enter friend's name");
+                  btn.className = "form-control input-width";
+                  btn.appendChild(t);
+                  var element = document.getElementById("users");
+                  element.appendChild(btn);
+                  element.appendChild()
+              }
+            </script>
 		</div>
       </div>
   </body>

@@ -18,10 +18,34 @@
     <script>
         document.getElementById("date").innerHTML = Date();
     </script>
+      
+          <script>
+       function previewFile(){
+           var preview = document.querySelector('img[id=preview]'); 
+           var file    = document.querySelector('input[type=file]').files[0]; 
+           var reader  = new FileReader();
+
+           reader.onloadend = function () {
+               preview.src = reader.result;
+               preview.width = 250;
+               preview.height = 250;
+               preview.style.display = "block";
+           }
+
+           if (file) {
+               reader.readAsDataURL(file); 
+           } else {
+               preview.src = "";
+           }
+      }
+
+      previewFile();  
+      </script>
 
   </head>
-
-  <body>
+    
+    
+<body>
       <!--navbar-->
       <nav class="fixed-top navbar navbar-expand-lg home-navbar reverse-order">
           <a class="navbar-brand whitewash-text" href="../loggedInHome.html">
@@ -53,7 +77,8 @@
           <div class="meme-container">
               <img src="../res/TwiceMina.jpg" class="avatar">
               <!--Mina Myoui-->
-              <a href="../upload.html" style="text-align: center; color:#3E3E3B;" class = "lead">Upload a meme</a>
+              <a href="../upload.html" style="text-align: center; color:#3E3E3B;" class = "lead">Upload form</a>
+              <a href="" style="text-align: center; color:#3E3E3B;" class = "lead" data-toggle="modal" data-target="#modalQuickUploadForm">Quick upload</a>
               <a href="MinasMemes.html" style="text-align: center; color:#3E3E3B;" class = "lead">My memes</a>
           </div>
           
@@ -64,6 +89,56 @@
 
               <p style="text-align: left; color:#3E3E3B;" class = "lead">My Memes</p>
           </div>
+                    
+        <div class="modal fade" id="modalQuickUploadForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Upload a meme to my page</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                        <form id="login" class="form-format" action="javascript:upload()">
+                        <input type="file" onchange="previewFile()" required><br><br>
+                        <img src="" id="preview" class="img-thumbnail" style="display: none;"><br> 
+                        <label data-error="wrong" data-success="right" for="defaultForm-title">Title</label><br>
+                        <input id="defaultForm-title" class="form-control validate" required> 
+                        <label data-error="wrong" data-success="right" for="defaultForm-title">Description</label><br>
+                        <input id="defaultForm-title" class="form-control validate" required>
+                        <button class="btn btn-default" type="submit">Upload</button>
+                        </form>
+                    </div>
+                          <script>
+                              function upload() {
+                                  var contMain = document.createElement("div");
+                                  var cont = document.createElement("div");
+                                  
+                                  cont.className = "meme-post";
+                                  var title = document.createElement("h1");
+                                  var titletext = document.createTextNode(document.getElementById("defaultForm-title").value);
+                                  title.appendChild(titletext);
+                                  cont.appendChild(title);
+                                  var img = document.createElement("img");
+                                  img.className = "img-thumbnail";
+                                  img.src = document.getElementById("preview").src;
+                                  cont.appendChild(img);
+                                  
+                                  contMain.className = "meme-container";
+                                  contMain.appendChild(cont);
+                                  
+                                  var element = document.getElementById("uploaded");
+                                  element.appendChild(contMain);                                  
+                              }
+                            </script>
+                </div>
+            </div>
+        </div>
+          <!--test-->
+          <div id="uploaded">          
+          </div>
+          
           <!--4-->
           <div class="meme-container">
               <div class="meme-post">
