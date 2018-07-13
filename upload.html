@@ -73,10 +73,11 @@
       <div id="main-content">
           <div class="container main-container">
               <form class="input-types" action="loggedInHome.html">
+                  <img src="res/uploading.gif" class="img-thumbnail">
                   <h1 class="display-4" style="text-align: center; color:#3E3E3B;">Got a <i>dank</i> meme?</h1>
                   <h4 style="text-align: center; color:#3E3E3B;" class = "lead">Upload it here.</h4>
                   <!--UploadFiles-->
-                  <p>Show to the world!</p>
+                  <p>Show it to the world!</p>
                   <input type="file" onchange="previewFile()">
                   <br><br>
                   <img src="" id="preview" class="img-thumbnail" style="display: none;">
@@ -84,7 +85,7 @@
                   <!--<img src="" height="200" alt="Image preview...">-->
                   <hr class="my-4">
                   <!--Add Tags-->
-                  <p>Tag to share to the word!</p>
+                  <p>Add some tags!</p>
                   <input class="checkbox-size" name="tag" value="#Anime" style="vertical-align: middle; margin: 0px;" type="checkbox">#Anime<br>
                   <input class="checkbox-size" name="tag" value="#Classic" style="vertical-align: middle; margin: 0px;" type="checkbox">#Classic<br>
                   <input class="checkbox-size" name="tag" value="#Dank" style="vertical-align: middle; margin: 0px;" type="checkbox">#Dank<br>
@@ -92,8 +93,21 @@
                   <input class="checkbox-size" ame="tag" value="#Wholesome" style="vertical-align: middle; margin: 0px;" type="checkbox">#Wholesome<br>
                   <hr class="my-4">
                   <!--Allow Sharing to specific users-->
-                  <p>Send love, Share to friends?</p>
-                  <input type="text" class="form-control input-width" placeholder="Enter Friends Name">
+                  <p>Send love, share to friends?</p>
+                  <input type="text" class="form-control input-width" placeholder="Enter friend's name">
+                  <div id="additional"></div>
+                  <button type="button" onclick="addMore()">Add another user?</button>                  
+                  <script>
+                      function addMore() {                          
+                          var btn = document.createElement("input");
+                          var t = document.createTextNode("Enter friend's name");
+                          btn.className = "form-control input-width";
+                          btn.appendChild(t);
+                          var element = document.getElementById("additional");
+                          element.appendChild(btn);
+                          element.appendChild()
+                      }
+                    </script>
                   <hr class="my-4">
                   <!--Allow to set to private or public-->
                   <p>Show the world?</p>
@@ -116,12 +130,12 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        Do you want to upload your awesome meme?
+                        Do you want to upload your dank meme?
                       </div>
                       <div class="modal-footer">
                         <form action="loggedInHome.html">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Not Yet</button>
-                        <button type="submit" class="btn btn-primary">YES!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Not yet...</button>
+                        <button type="submit" class="btn btn-primary">Yes!</button>
                         </form>
                       </div>
                     </div>
