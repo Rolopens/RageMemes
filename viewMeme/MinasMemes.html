@@ -77,8 +77,8 @@
           <div class="meme-container">
               <img src="../res/TwiceMina.jpg" class="avatar">
               <!--Mina Myoui-->
-              <a href="../upload.html" style="text-align: center; color:#3E3E3B;" class = "lead">Upload form</a>
               <a href="" style="text-align: center; color:#3E3E3B;" class = "lead" data-toggle="modal" data-target="#modalQuickUploadForm">Quick upload</a>
+              <a href="../upload.html" style="text-align: center; color:#3E3E3B;" class = "lead">Upload form</a>
               <a href="MinasMemes.html" style="text-align: center; color:#3E3E3B;" class = "lead">My memes</a>
           </div>
           
@@ -106,7 +106,16 @@
                         <label data-error="wrong" data-success="right" for="defaultForm-title">Title</label><br>
                         <input id="defaultForm-title" class="form-control validate" required> 
                         <label data-error="wrong" data-success="right" for="defaultForm-title">Description</label><br>
-                        <input id="defaultForm-title" class="form-control validate" required>
+                        <input id="defaultForm-title" class="form-control validate" required><br>
+                        <label data-error="wrong" data-success="right" for="defaultForm-title">Tags</label><br>
+                        <input class="checkbox-size" name="tag" value="#Anime" style="vertical-align: middle; margin: 2px;" type="checkbox">#Anime<br>
+                        <input class="checkbox-size" name="tag" value="#Classic" style="vertical-align: middle; margin: 2px;" type="checkbox">#Classic<br>
+                        <input class="checkbox-size" name="tag" value="#Dank" style="vertical-align: middle; margin: 2px;" type="checkbox">#Dank<br>
+                        <input class="checkbox-size" name="tag" value="#Pinoy" style="vertical-align: middle; margin: 2px;" type="checkbox">#Pinoy<br>
+                        <input class="checkbox-size" ame="tag" value="#Wholesome" style="vertical-align: middle; margin: 2px;" type="checkbox">#Wholesome<br><br>
+                        <label data-error="wrong" data-success="right" for="defaultForm-title">Viewing options:</label><br>
+                        <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 2px;" type="radio" required>Private<br>
+                        <input class="radio-size" name="Publicity" style="vertical-align: middle; margin: 2px;" type="radio" required>Public<br><br>
                         <button class="btn btn-default" type="submit">Upload</button>
                         </form>
                     </div>
