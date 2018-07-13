@@ -13,11 +13,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
       
     <!-- Custom styles for this template -->
-    <link href="../css/viewMeme.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
     
-    <script>
-        document.getElementById("date").innerHTML = Date();
-    </script>
 
   </head>
 
@@ -29,6 +26,7 @@
             RageMemes
           </a>
           <a class="nav-link whitewash-text right-floater" href="../login.html">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link whitewash-text right-floater" href="../signup.html">Sign Up<span class="sr-only">(current)</span></a>
           <div class="collapse navbar-collapse right-floater" id="navbarNavDropdown">
             <ul class="navbar-nav">
               
@@ -42,6 +40,7 @@
                   <a class="dropdown-item" href="../dankTagged.html">#Dank</a>
                   <a class="dropdown-item" href="../pinoyTagged.html">#Pinoy</a>
                   <a class="dropdown-item" href="../wholesomeTagged.html">#Wholesome</a>
+                  
                 </div>
               </li>
             </ul>
@@ -49,18 +48,44 @@
         </nav>
       
       <!--Main Content-->
+      <div id="main-content1">
+          <div class="meme-container">
+              <img src="../res/TwiceMina.jpg" class="avatar">
+              <h4 class="display-6 flex-element" style="text-align: center; color:#3E3E3B;">Mina Myoui</h4>
+              <!--TUZYU WOO-->
+              <p style="text-align: center; color:#3E3E3B;" class = "lead">Im the best ballerina! :)</p>
+          </div>
+          
+      </div>
+      
+      
+      
       <div id="main-content">
-          <div class="container meme-container">
-          <div class="meme-post">
-              <img src="../res/meme4.gif" class="image">
-              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">I wish I had his dance skills...</h1>
-              <div class="details">
-                  <h2 class="description">A legend of the dancefloor.</h2>
-                  <h3 class="author">Posted by <a href="../ErrorHtml/MinasProfile.html">Mina</a> on 11 July 2018</h3>
-                  <h3 class="tags">Tags: <a href="../wholesomeTagged.html">Wholesome</a></h3>
+          <div class="meme-container">
+              <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Recent Memes by Mina</h1>
+          </div>
+          <!--1-->
+          <div class="meme-container">
+              <div class="meme-post">
+                  <h1 class="post-title"><a href="../viewMeme/viewMeme4.html">I wish I had his dance skills...</a></h1>
+                  <img src="../res/meme4.gif" class="img-thumbnail">
+                  
               </div>
           </div>
-		</div>
+          
+          <!--Other memes-->
+          <div class="meme-container">
+            <h1 class="display-4" style="text-align: left; color:#3E3E3B;">Other Memes by Mina</h1>
+          </div>
+          <div class="meme-container">
+              <div class="meme-post">
+                  <h1 class="post-title"><a href="../viewMeme/viewMeme5.html">Some men leave with great treasures, and others do not make it out alive.</a></h1>
+                  <img src="../res/meme5.jpg" class="img-thumbnail">
+                  
+              </div>
+          </div>
+          
+          
       </div>
   </body>
 </html>

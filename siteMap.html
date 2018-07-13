@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Upload</title>
+    <title>Sitemap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,74 +15,68 @@
     <!-- Custom styles for this template -->
     <link href="css/siteMap.css" rel="stylesheet">
 
-
-    <script>
-       function previewFile(){
-           var preview = document.querySelector('img[id=preview]'); 
-           var file    = document.querySelector('input[type=file]').files[0]; 
-           var reader  = new FileReader();
-
-           reader.onloadend = function () {
-               preview.src = reader.result;
-               preview.width = 250;
-               preview.height = 250;
-               preview.style.display = "block";
-           }
-
-           if (file) {
-               reader.readAsDataURL(file); 
-           } else {
-               preview.src = "";
-           }
-      }
-
-      previewFile();  
-      </script>
-    
-
   </head>
 
   <body>
-      <!--navbar-->
-      <nav class="fixed-top navbar navbar-expand-lg home-navbar reverse-order">
-          <a class="navbar-brand whitewash-text" href="loggedInHome.html">
-            <img src="res/homeIcon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            RageMemes
-          </a>
-          <a class="nav-link whitewash-text right-floater" href="index.html">Logout<span class="sr-only">(current)</span></a>
-          <div class="collapse navbar-collapse right-floater" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle whitewash-text" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Search by Tags
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="animeTaggedLog.html">#Anime</a>
-                  <a class="dropdown-item" href="classicTaggedLog.html">#Classic</a>
-                  <a class="dropdown-item" href="dankTaggedLog.html">#Dank</a>
-                  <a class="dropdown-item" href="pinoyTaggedLog.html">#Pinoy</a>
-                  <a class="dropdown-item" href="wholesomeTaggedLog.html">#Wholesome</a>
-                  
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      <!--Main Content-->
-      <div id="main-content">
-          <div class="container main-container">
-              <div class="header">
-                  <h1 class="display-4" style="text-align: center; color:#3E3E3B;">RageMemes</h1>
-                  <h4 style="text-align: center; color:#3E3E3B;" class = "lead">Site map</h4>
-                  <hr class="my-4">
-              </div>
-              <div class="pages">
-                  <ul>
-                  
-                  </ul>                  
-              </div>
-          </div>
-      </div>
+      <h1>HTML with Tags</h1>
+      <a href="animeTagged.html">Anime</a><br>
+      <a href="animeTaggedLog.html">Anime Logged in</a><br>
+      <a href="classicTagged.html">Classic</a><br>
+      <a href="classicTaggedLog.html">Classic Logged in</a><br>
+      <a href="dankTagged.html">Dank</a><br>
+      <a href="dankTaggedLog.html">Dank Logged in</a><br>
+      <a href="pinoyTagged.html">Pinoy</a><br>
+      <a href="pinoyTaggedLog.html">Pinoy Logged in</a><br>
+      <a href="wholesomeTagged.html">Wholesome</a><br>
+      <a href="wholesomeTaggedLog.html">Wholesome Logged in</a><br>
+      
+      <h1>HTML With home functions/views</h1>
+      <a href="login.html">Login</a><br>
+      <a href="signup.html">Signup</a><br>
+      <a href="index.html">Home</a><br>
+      <a href="loggedInHome.html">Home of Logged In User</a><br>
+      <a href="ErrorHtml/MinasProfile.html">Mina's Public Profile</a><br>
+      <a href="ErrorHtml/ErrorNotLogged.html">Tzuyu's Public Profile</a><br>
+      <a href="viewUser.html">Tzuyu's Profile</a><br>
+      
+      <h1>HTML Error Pages</h1>
+      <a href="ErrorHtml/ErrorPrivatePost.html">Inaccessible Meme</a><br>
+      
+      <h1>HTML For Viewing Memes</h1>
+      <a href="viewMeme/viewMeme1.html">View Meme 1</a><br>
+      <a href="viewMeme/viewMeme2.html">View Meme 2</a><br>
+      <a href="viewMeme/viewMeme3.html">View Meme 3</a><br>
+      <a href="viewMeme/viewMeme4.html">View Meme 4</a><br>
+      <a href="viewMeme/viewMeme5.html">View Meme 5</a><br>
+      <a href="viewMeme/viewMeme6.html">View Meme 6</a><br>
+      <a href="viewMeme/viewMeme7.html">View Meme 7</a><br>
+      <a href="viewMeme/viewMeme8.html">View Meme 8</a><br>
+      <a href="viewMeme/viewMeme9.html">View Meme 9</a><br>
+      <a href="viewMeme/viewMeme10.html">View Meme 10</a><br>
+      <a href="viewMeme/viewMeme11.html">View Meme 11</a><br>
+      <a href="viewMeme/viewMeme12.html">View Meme 12</a><br>
+      <a href="viewMeme/viewMeme13.html">View Meme 13</a><br>
+      <a href="viewMeme/viewMeme14.html">View Meme 14</a><br>
+      <a href="viewMeme/viewMeme15.html">View Meme 15</a><br>
+      <a href="viewMeme/viewMeme1-1.html">View Meme 1 Logged In</a><br>
+      <a href="viewMeme/viewMeme2-1.html">View Meme 2 Logged In</a><br>
+      <a href="viewMeme/viewMeme3-1.html">View Meme 3 Logged In</a><br>
+      <a href="viewMeme/viewMeme4-1.html">View Meme 4 Logged In</a><br>
+      <a href="viewMeme/viewMeme5-1.html">View Meme 5 Logged In</a><br>
+      <a href="viewMeme/viewMeme6-1.html">View Meme 6 Logged In</a><br>
+      <a href="viewMeme/viewMeme7-1.html">View Meme 7 Logged In</a><br>
+      <a href="viewMeme/viewMeme8-1.html">View Meme 8 Logged In</a><br>
+      <a href="viewMeme/viewMeme9-1.html">View Meme 9 Logged In</a><br>
+      <a href="viewMeme/viewMeme10-1.html">View Meme 10 Logged In</a><br>
+      <a href="viewMeme/viewMeme11-1.html">View Meme 11 Logged In</a><br>
+      <a href="viewMeme/viewMeme12-1.html">View Meme 12 Logged In</a><br>
+      <a href="viewMeme/viewMeme13-1.html">View Meme 13 Logged In</a><br>
+      <a href="viewMeme/viewMeme14-1.html">View Meme 14 Logged In</a><br>
+      <a href="viewMeme/viewMeme15-1.html">View Meme 15 Logged In</a><br>
+      <a href="viewMeme/viewMeme17-1.html">View Meme 17 Logged In</a><br>
+      <a href="viewMeme/viewMeme4-1Edit.html">View Meme 4 Logged In Edit as Mina</a><br>
+      <a href="viewMeme/viewMeme5-1Edit.html">View Meme 5 Logged In Edit as Mina</a><br>
+      <a href="viewMeme/viewMeme4-1Share.html">View Meme 4 Logged In Share as Mina</a><br>
+      <a href="viewMeme/viewMeme5-1Share.html">View Meme 5 Logged In Share as Mina</a><br>
   </body>
 </html>
